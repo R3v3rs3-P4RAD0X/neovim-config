@@ -61,4 +61,7 @@ require("lazy").setup({
 
   -- Treesitter
   'nvim-treesitter/nvim-treesitter',
+
+  -- Toggle terminal
+  "akinsho/nvim-toggleterm.lua",
 })

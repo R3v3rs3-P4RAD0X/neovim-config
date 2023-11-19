@@ -4,8 +4,11 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ','
 
 -- Control + S in normal and insert mode to save buffer
-vim.keymap.set("n", "<C-s>", "<cmd>update<CR>", { silent = true })
-vim.keymap.set("i", "<C-s>", "<cmd>update<CR>", { silent = true })
+vim.keymap.set("n", "<C-s>", "<cmd>w<CR>", { silent = true })
+vim.keymap.set("i", "<C-s>", "<cmd>w<CR>", { silent = true })
+
+-- Control + Q in normal mode to quit
+vim.keymap.set("n", "<C-q>", "<cmd>q!<CR>", { silent = true })
 
 -- Navigate panes with Ctrl + arrows
 vim.keymap.set("n", "<C-Left>", "<C-w>h", { silent = true })
@@ -32,3 +35,6 @@ vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { silent = tru
 
 -- Toggle comments
 vim.keymap.set("n", "<leader>/", "<cmd>CommentToggle<CR>", { silent = true })
+
+-- Open toggle term
+vim.keymap.set("n", "<leader><CR>", "<cmd>ToggleTerm<CR>", { silent = true })

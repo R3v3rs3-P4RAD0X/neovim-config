@@ -26,7 +26,7 @@ To use this Neovim configuration, follow these steps:
 - Symbols Outline
 - Lualine
 
-- Themes
-- - gruvbox
-- - tokyonight
-- - kanagawa
+### Themes
+- gruvbox
+- tokyonight
+- kanagawa
